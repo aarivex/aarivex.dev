@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    box-sizing: inherit;
+    --main-bg: url(assets/media/background.png);
+    --white: #ebebeb;
+    --white-gray: #c8c8c8;
+    --green: rgba(85, 239, 196);
+    --green-15: rgba(85, 239, 196, .15);
+    --purple: #A29BFE;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), var(--main-bg) no-repeat;
+    background-position: center 40%;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+.container {
+    display: grid;
+    grid: auto 1fr / auto;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    margin: 1.5em 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.nav > .nav__items {
+    display: inline-flex;
+    list-style: none;
+    gap: 60px;
+}
+.nav > .brand {
+    font-size: 1.25em;
+    align-self: center;
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav__items a {
+    font-size: 1.125em;
+    text-decoration: none;
+    color: inherit;
+}
+
+a.active {
+    font-weight: 600;
+    color: var(--purple);
+}
+
+main {
+    display: block;
+    margin-top: 5.25rem;
+}
+
+.intro {
+    position: relative;
+    display: inline-block;
+}
+.intro__icon-container {
+    position: absolute;
+    top: -1.825rem;
+    right: -2.525rem;
+    background: var(--green);
+    height: 60px;
+    width: 100px;
+    z-index: -1;
+}
+.intro__icon-container > .intro__icon {
+    height: 100%;
+    width: 100%;
+}
+.intro__title {
+    font-size: 2.725em;
+    font-weight: 300;
+    margin: 0;
+}
+.intro__desc {
+    font-size: 1.125em;
+    color: var(--white-gray);
+}
+
+.about__container {
+    display: flex;
+}
+
+.about {
+    width: 50%;
+}
+.about__title {
+    color: var(--purple);
+    padding: 0 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+.about__body {
+    background: var(--green-15);
+    padding: 2rem 5rem 4rem 2rem;
+}
+
+.socials {
+    position: relative;
+}
+.socials__container {
+    position: absolute;
+    top: -5em;
+    left: -5em;
+}
+.socials__title {
+    color: var(--green);
+    font-weight: 300;
+    text-align: right;
+    margin: 0;
+}
+.socials__body {
+    display: flex;
+    left: -5em;
+    top: -3em;
+    padding: 1.125rem 2rem;
+    border: 1px solid var(--purple);
+    gap: 4.5rem;
+}
+.socials__link-icon {
+    height: 60px;
+    width: 60px;
+}
