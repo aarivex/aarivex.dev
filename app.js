@@ -1,7 +1,21 @@
+let projects = "https://aarivex.dev/projects.json";
+
 let initialDelay = 5;
 let delay = 5;
 
-(async() => await nameLoop(document.querySelector("b.name")))();
+(async() => {
+    await load();
+    await nameLoop(document.querySelector("b.name"));
+})();
+
+async function load() {
+    let result = await fetch(projects);
+
+    if (result.ok) {
+        let data = await result.json();
+        let projects = data.projects;
+    }
+}
 
 async function nameLoop(el) {
     let initial = el.innerText;
@@ -32,3 +46,16 @@ async function type(el, text, delay = 100) {
 async function sleep(ms) {
     return new Promise(async res => await setTimeout(res, ms));
 }
+
+document.querySelector(".brand").onclick = e => {
+    e.preventDefault();
+
+    let target = e.currentTarget;
+    target.innerText.startsWith("~#") ? target.innerText = target.innerText.substr(3) : target.prepend("~# ");
+};
+
+document.querySelector("a[href='#projects']").onclick = e => {
+    e.preventDefault();
+
+    window.scrollTo({ top: document.querySelector("#projects").offsetTop, behavior: 'smooth' });
+};

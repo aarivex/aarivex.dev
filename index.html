@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 
@@ -14,22 +14,17 @@
     <div class="container">
         <header class="header">
             <nav class="nav">
-                <a href="#" class="brand">~# aarivex.dev</a>
+                <a href="/" class="brand">~# aarivex.dev</a>
 
                 <ul class="nav__items">
-                    <li>
-                        <a href="/" class="active">
-                            Home
-                        </a>
-                    </li>
                     <li>
                         <a href="#projects">
                             Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">
-                            Contact
+                        <a href="https://github.com/aarivex" target="_blank">
+                            GitHub
                         </a>
                     </li>
                 </ul>
@@ -52,10 +47,6 @@
             
             <article class="about__container">
                 <section class="about">
-                    <h3 class="about__title">
-                        
-                    </h3>
-    
                     <article class="about__body">
                         I've been developing websites and software for more than 7 years, 
                         using a lot of different stacks.<br><br>
@@ -88,9 +79,53 @@
                     </div>
                 </section>
             </article>
+
+            <section class="projects" id="projects">
+                <div class="projects__container">
+                    <h3 class="projects__title">
+                        ./projects
+                    </h3>
+
+                    <article class="projects__body">
+                        <div class="project">
+                            <h3>
+                                aarivex.dev
+
+                                <a href="/" style="padding-left: 1em;">
+                                    <img class="socials__link-icon" style="height: 25px; width: 25px;" src="assets/media/link-outline.svg" alt="aarivex.dev">
+                                </a>
+                                <a href="https://github.com/aarivex" target="_blank" style="padding-left: 0.5em;">
+                                    <img class="socials__link-icon" style="height: 25px; width: 25px;" src="assets/media/logo-github.svg" alt="GitHub">
+                                </a>
+                            </h3>
+                            <p>My website. The one you're currently looking at.</p>
+                        </div>
+
+                        <div class="project loading">
+                            <h3>...</h3>
+                            <p>...</p>
+                        </div>
+
+                        <div class="project">
+                            <h3>
+                                something for you?
+                            </h3>
+                            <p>
+                                Have any ideas I could work on? Want to program or design on something together? Need help?
+                            </p>
+                            <p><a href="#contact">Reach out to me</a> and we can work out something. :)</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </main>
+
+        <footer>
+            &copy; 2021 aarivex.dev
+        </footer>
     </div>
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?version=3.108.0&features=default,es2017"></script>
     <script src="app.js"></script>
 </body>
 </html>
