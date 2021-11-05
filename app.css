@@ -45,10 +45,10 @@ body {
 }
 .nav > .brand {
     font-size: 1.25em;
-    align-self: center;
     color: var(--main-color);
-    text-decoration: none;
+    align-self: center;
     font-weight: 500;
+    text-decoration: none;
 }
 
 .nav__items a {
@@ -72,10 +72,10 @@ main {
     display: inline-block;
 }
 .intro__icon-container {
+    background: var(--green);
     position: absolute;
     top: -1.825rem;
     right: -2.525rem;
-    background: var(--green);
     height: 60px;
     width: 100px;
     z-index: -1;
@@ -96,6 +96,8 @@ main {
 
 .about__container {
     display: flex;
+    margin-top: 5em;
+    margin-left: 11.25em;
 }
 
 .about {
@@ -109,7 +111,7 @@ main {
 }
 .about__body {
     background: var(--green-15);
-    padding: 2rem 5rem 4rem 2rem;
+    padding: 2em 5em 4em 2em;
 }
 
 .socials {
@@ -128,8 +130,6 @@ main {
 }
 .socials__body {
     display: flex;
-    left: -5em;
-    top: -3em;
     padding: 1.125rem 2rem;
     border: 1px solid var(--purple);
     gap: 4.5rem;
