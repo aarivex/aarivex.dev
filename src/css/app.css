@@ -8,7 +8,7 @@
 
 :root {
     box-sizing: inherit;
-    --main-bg: url(assets/media/background.png);
+    --main-bg: url(../../assets/media/background.png);
     --white: #ebebeb;
     --white-gray: #c8c8c8;
     --white-50: #b6b6b6;
