@@ -1,0 +1,59 @@
+.projects {
+    margin: 6.25em 7.25em;
+}
+
+.projects__title {
+    font-weight: var(--title-fw);
+}
+
+.projects__body {
+    background: var(--green-30);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 1.25em;
+}
+
+.project {
+    background: var(--green-15);
+    padding: 1.125em;
+}
+.project:nth-child(1) {
+    flex: 1 0 auto;
+    margin-left: -3.25em;
+    padding-left: 4.25em;
+}
+.project:nth-child(3n+3), .project:last-of-type {
+    flex: 1 0 auto;
+}
+.project:last-of-type {
+    background: var(--green-30);
+    margin-right: -3.25em;
+    padding-right: 4.25em;
+}
+.project.loading {
+    flex: 1;
+}
+
+.project__header {
+    display: flex;
+    align-items: center;
+}
+
+.project__header h3 {
+    padding-right: 1em;
+}
+
+.project__body {
+
+}
+
+.project__link {
+    padding-left: 0.5em;
+}
+
+.project__link-icon {
+    height: 25px;
+    width: 25px;
+}

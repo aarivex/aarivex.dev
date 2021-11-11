@@ -1,0 +1,14 @@
+.about {
+    width: 50%;
+}
+
+.about__container {
+    display: flex;
+    margin-top: 5em;
+    margin-left: 11.25em;
+}
+
+.about__body {
+    background: var(--green-15);
+    padding: 2em 5em 4em 2em;
+}

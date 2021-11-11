@@ -1,0 +1,29 @@
+.socials {
+    position: relative;
+    height: 42vh;
+}
+
+.socials__container {
+    position: absolute;
+    top: -5em;
+    left: -5em;
+}
+
+.socials__title {
+    color: var(--green);
+    font-weight: var(--title-fw);
+    text-align: right;
+    margin: 0;
+}
+
+.socials__body {
+    display: flex;
+    padding: 1.125rem 2rem;
+    border: 1px solid var(--white);
+    gap: 4.5rem;
+}
+
+.socials__link-icon {
+    height: 60px;
+    width: 60px;
+}

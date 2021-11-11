@@ -21,4 +21,14 @@ export default () => {
         });
     };
     
+    /* Contact link handler */
+    document.querySelector("a[href='#contact']").onclick = e =>
+    {
+        e.preventDefault();
+
+        window.scrollTo({
+            top: document.querySelector("#contact").offsetTop,
+            behavior: 'smooth'
+        });
+    };
 };
