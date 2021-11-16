@@ -17,7 +17,7 @@ export default async function load() {
         let data = await result.json();
         let projects = data.projects;
 
-        for (let i = 0; i < projects.length; i++) {
+        for (let i = 1; i < projects.length; i++) { // start at 1 to avoid project duplicate
             append(projects[i]);
         }
 
@@ -35,18 +35,18 @@ function append(project) {
     /* Append links to header */
     if (project.links.hasOwnProperty("website")) {
         element.querySelector(".links__container")
-                .insertAdjacentHTML("beforebegin",
+               .insertAdjacentHTML("beforebegin",
                     `<a href="${project.links.website}" class="project__link">
                             <img class="project__link-icon" src="assets/media/link-outline.svg" alt="${project.links.website}">
-                        </a>`);
+                     </a>`);
     }
 
     if (project.links.hasOwnProperty("github")) {
         element.querySelector(".links__container")
-                .insertAdjacentHTML("beforebegin",
+               .insertAdjacentHTML("beforebegin",
                     `<a href="${project.links.github}" class="project__link">
                             <img class="project__link-icon" src="assets/media/logo-github.svg" alt="${project.links.github}">
-                        </a>`);
+                     </a>`);
     }
 
     document.querySelector(".projects__body > .project.loading")
