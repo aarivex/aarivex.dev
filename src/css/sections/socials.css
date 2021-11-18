@@ -30,7 +30,8 @@
 
 @media screen and (max-width: 1024px) {
     .socials {
-        height: 5vh;
+        height: initial;
+        margin-bottom: 5em;
     }
 
     .socials > .socials__container {
