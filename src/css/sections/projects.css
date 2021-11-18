@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .project:last-of-type {
-        flex-shrink: 1;
+    section.projects {
+        margin: 0;
     }
 }

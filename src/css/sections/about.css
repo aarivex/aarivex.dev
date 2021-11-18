@@ -26,14 +26,4 @@
     .about__body {
         padding: 2em;
     }
-
-    .socials > .socials__container {
-        position: relative;
-        top: 0;
-        left: 0;
-    }
-
-    section.projects {
-        margin: 0;
-    }
 }
