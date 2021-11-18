@@ -20,12 +20,12 @@
     padding: 1.125em;
 }
 .project:nth-child(1) {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     margin-left: -3.25em;
     padding-left: 4.25em;
 }
 .project:nth-child(3n+3), .project:last-of-type {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 .project:last-of-type {
     background: var(--green-30);
@@ -56,4 +56,10 @@
 .project__link-icon {
     height: 25px;
     width: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    .project:last-of-type {
+        flex-shrink: 1;
+    }
 }

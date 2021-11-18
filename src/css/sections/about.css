@@ -12,3 +12,28 @@
     background: var(--green-15);
     padding: 2em 5em 4em 2em;
 }
+
+@media screen and (max-width: 1024px) {
+    .about__container {
+        display: block;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .about {
+        width: 100%;
+    }
+    .about__body {
+        padding: 2em;
+    }
+
+    .socials > .socials__container {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    section.projects {
+        margin: 0;
+    }
+}
