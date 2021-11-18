@@ -27,3 +27,15 @@
     height: 60px;
     width: 60px;
 }
+
+@media screen and (max-width: 1024px) {
+    .socials {
+        height: 5vh;
+    }
+
+    .socials > .socials__container {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
